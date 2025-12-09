@@ -1,0 +1,133 @@
+/* Basic Reset and Container Setup */
+body {
+    margin: 0;
+    font-family: sans-serif; /* Use a common sans-serif font for a default look */
+}
+
+.container {
+    max-width: 800px; /* Limits the overall width */
+    margin: 20px auto; /* Centers the whole content block */
+    padding: 0 20px;
+}
+
+/* 1. Header and Navigation */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000; /* Separator line */
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px; /* Spacing between nav links */
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 2. Developer Title Section */
+.hero-section {
+    text-align: center;
+    padding: 30px 0 20px;
+    border-bottom: 1px solid #000; /* Separator line */
+    margin-bottom: 20px;
+}
+
+.hero-section h1 {
+    margin-bottom: 5px;
+}
+
+.hero-section p {
+    margin-top: 0;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+/* 3. Main Content Grid (P-W-E) */
+.pwe-grid {
+    display: grid;
+    /* Defines three equally sized columns with a gap */
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000; /* Separator line */
+    margin-bottom: 20px;
+}
+
+.pwe-grid h2 {
+    margin-top: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000;
+}
+
+/* Vertical separator lines as seen in the wireframe */
+.projects-column {
+    border-right: 1px solid #000;
+    padding-right: 20px;
+}
+
+.work-experience-column {
+    border-right: 1px solid #000;
+    padding-right: 20px;
+}
+
+/* Spacing within columns */
+.projects-column ul, 
+.education-column ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.work-item {
+    margin-bottom: 15px;
+}
+
+.work-item h3 {
+    margin-bottom: 0;
+}
+
+/* 4. Reviews Section */
+.reviews-section {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000; /* Separator line */
+    margin-bottom: 20px;
+}
+
+.reviews-grid {
+    display: flex; /* Use flex for the review cards */
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.review-card {
+    flex: 1; /* Makes all cards take up equal space */
+    border: 1px solid #000;
+    border-radius: 15px; /* Creates the rounded speech-bubble effect */
+    padding: 15px;
+    position: relative;
+    /* Optional: creates the small tail effect */
+    margin-top: 10px;
+}
+
+.review-card p {
+    margin: 5px 0;
+}
+
+.review-card .reviewer-name {
+    font-weight: bold;
+}
+
+/* 5. Footer */
+.main-footer {
+    text-align: center;
+    font-size: 0.8em;
+    padding-top: 10px;
+}
